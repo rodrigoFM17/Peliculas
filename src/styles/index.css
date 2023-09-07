@@ -1,0 +1,114 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    background-color: #1D3D59;
+    font-family: 'Oswald';
+}
+
+header{
+    height: 5vmax;
+    background-color: #1D3D59;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    color: #D8F2EB;
+    border-bottom: .4vmax solid #591419 ;
+    
+}
+
+header a:hover{
+    background-image: url(../images/raya.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    scale: 1.2;
+    
+}
+ 
+header a{  
+    padding: 1vmax .5vmax;
+    text-decoration: none;
+    color: #D8F2EB;
+}
+
+nav{
+    font-size: 2vmax;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    width: 50%;
+}
+
+
+
+.logo{
+    
+    font-size: 1.4vmax;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    background-image: url(../images/rayas.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imagen-logo{
+    margin: 5%;
+    fill: #D8F2EB;
+    width: 2.8vmax;
+}
+
+#banner{
+    width: 100%;
+    color: white;
+}
+
+#banner > img{
+    width: 100%;
+}
+
+#image-banner{
+    width: 100%;
+    opacity: 0.1;
+}
+
+
+
+
+
+.container-banner-hover{
+    padding: 0 3vmax ;
+    display: flex;
+    width: 100%;
+    height: 10vmax;
+    background-color: rgba( 0, 0, 0, 0.5);
+    box-shadow: 0 -5vmax 5vmax rgba(0, 0, 0, 0.5);
+    
+}
+
+#title-banner > div{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+#title-banner{
+    font-size: 2vmax;
+    text-align: center;
+    width: 13vmax;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons{
+    width: 2vmax;
+}
+
+
