@@ -135,7 +135,10 @@ nav{
     align-items: center;
 }
 
-#slider-peliculas{
+#slider-peliculas,
+#slider-series, 
+#slider-tendencia, 
+#slider-populares{
     width: 80%;
     margin: 5vmax auto;
     display: flex;
@@ -156,24 +159,61 @@ nav{
     opacity: 0;
 }
 
-.container-image-hover > div{
-    
-}
 
 
 
-#slider-peliculas figure > img{
+#slider-peliculas figure > img, 
+#slider-series figure > img, 
+#slider-tendencia figure > img,
+#slider-populares figure > img {
     position: relative;
     height: 25vmax;
     
 }
 
-#slider-peliculas figure:hover{
+#slider-peliculas figure:hover, 
+#slider-series figure:hover, 
+#slider-tendencia figure:hover,
+#slider-populares figure:hover,
+#slider-top figure:hover{
     .container-image-hover{
         opacity: 1;
+        transition: 500ms;
     }
     
 }
 
+#container-top{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-top figure > img {
+    width: 40vmax;
+}
+
+#slider-top{
+    margin: 5vmax auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vmax;
+}
+
+.views{
+    color: #D8F2EB;
+    font-size: 5vmax;
+    width: 40%;
+    margin:  0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.views > img{
+    width: 5vmax;
+}
 
 
