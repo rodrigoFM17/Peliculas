@@ -12,11 +12,11 @@ function setContent(data, elemento){
     data.map( contenido => {
         content = content + 
     `<figure>
-        <img src='src/images/${contenido.Nombre}.jpg' />
+        <img src='src/images/${contenido.Nombre}.jpg' id='${contenido.Clave}' />
         <div class="container-image-hover">
             <div>
                 <a href=""><img src="src/images/info.svg" alt="" class="icons"></a>
-                <a href=""><img src="src/images/play.svg" alt="" class="icons"></a>
+                <a href="${contenido.Trailer}"><img src="src/images/play.svg" alt="" class="icons"></a>
             </div>
         </div>
     </figure>`
@@ -33,11 +33,11 @@ function setTop(data, elemento){
     data.map( contenido => {
         content = content + 
     `<figure>
-        <img src='src/images/${contenido.Nombre}.jpg' />
+        <img src='src/images/${contenido.Nombre}.jpg' id='${contenido.Clave}' />
         <div class="container-image-hover">
             <div>
                 <a href=""><img src="src/images/info.svg" alt="" class="icons"></a>
-                <a href=""><img src="src/images/play.svg" alt="" class="icons"></a>
+                <a href="${contenido.Trailer}"><img src="src/images/play.svg" alt="" class="icons"></a>
             </div>
         </div>
         <div class="views">

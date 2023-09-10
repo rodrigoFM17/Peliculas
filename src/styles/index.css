@@ -175,7 +175,11 @@ nav{
 #slider-series figure:hover, 
 #slider-tendencia figure:hover,
 #slider-populares figure:hover,
-#slider-top figure:hover{
+#slider-top figure:hover,
+#container-peliculas figure:hover,
+#container-series figure:hover,
+#container-populares figure:hover,
+#container-recientes figure:hover{
     .container-image-hover{
         opacity: 1;
         transition: 500ms;

@@ -1,0 +1,38 @@
+
+#container-peliculas, 
+#container-series,
+#container-populares,
+#container-recientes{
+    width: 70%;
+    margin: 5vmax auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+#container-peliculas figure > img,
+#container-series figure > img,
+#container-populares figure >img,
+#container-recientes figure > img{
+    width: 100%;
+}
+
+.container-image-hover > div{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5vmax;
+    font-size: 1vmax;
+}
+
+.container-image-hover > div > div{
+    margin: 0 2vmax;
+    gap: 3vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
