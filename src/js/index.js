@@ -15,8 +15,8 @@ function setContent(data, elemento){
         <img src='src/images/${contenido.Nombre}.jpg' id='${contenido.Clave}' />
         <div class="container-image-hover">
             <div>
-                <a href=""><img src="src/images/info.svg" alt="" class="icons"></a>
-                <a href="${contenido.Trailer}"><img src="src/images/play.svg" alt="" class="icons"></a>
+                <a href="src/views/especifica.html?id=${contenido.Clave}" onclick='cambiarEspecifica(this.id)' ><img src="src/images/info.svg" alt="info" class="icons"></a>
+                <a href="${contenido.Trailer}"><img src="src/images/play.svg" alt="play" class="icons"></a>
             </div>
         </div>
     </figure>`
@@ -36,8 +36,8 @@ function setTop(data, elemento){
         <img src='src/images/${contenido.Nombre}.jpg' id='${contenido.Clave}' />
         <div class="container-image-hover">
             <div>
-                <a href=""><img src="src/images/info.svg" alt="" class="icons"></a>
-                <a href="${contenido.Trailer}"><img src="src/images/play.svg" alt="" class="icons"></a>
+                <a href="src/views/especifica.html?id=${contenido.Clave}" onclick='cambiarEspecifica(this.id)' ><img src="src/images/info.svg" alt="info" class="icons"></a>
+                <a href="${contenido.Trailer}"><img src="src/images/play.svg" alt="play" class="icons"></a>
             </div>
         </div>
         <div class="views">
@@ -74,6 +74,10 @@ function setTop(data, elemento){
     fetch('http://localhost:4000/api/movies/popular')
         .then(response => response.json())
         .then(data => setTop(data, sliderTop))
+
+
+    const botones = document.querySelector('button[value]')
+    console.log(botones)
 
     
 

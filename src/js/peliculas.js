@@ -3,7 +3,7 @@ const peliculas = document.querySelector('#container-peliculas')
 const series = document.querySelector('#container-series')
 const populares = document.querySelector('#container-populares')
 const recientes = document.querySelector('#container-recientes')
-console.log(recientes)
+
 
 function setContent(data, elemento){
 
@@ -17,7 +17,7 @@ function setContent(data, elemento){
         <div class="container-image-hover" >
             <div>
                 <div>
-                    <a href=""><img src="../images/info.svg" alt="" class="icons"></a>
+                    <a href="../views/especifica.html?id=${contenido.Clave}" ' ><img src="../images/info.svg" alt="info" class="icons"></a>
                     <a href="${contenido.Trailer}"><img src="../images/play.svg" alt="" class="icons"></a>
                 </div>
                 <div>
